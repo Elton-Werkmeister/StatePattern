@@ -12,8 +12,15 @@ Der Unterschied besteht darin, dass das State Pattern den nächsten Zustand einl
 
 # Beispiel
 
-In diesem einfachen AL-Beispiel wird der Customer Context um eine State Machine erweitert. Die Kunden erhalten ein Zustandsfeld, das einen von vier Zuständen enthalten kann ("Exporting", "Exported", "Imported", "BC Update").
+In diesem einfachen AL-Beispiel wird der Customer Context um eine [State Machine](https://de.wikipedia.org/wiki/Endlicher_Automat) erweitert. Die Kunden erhalten ein Zustandsfeld, das einen von vier Zuständen enthalten kann ("Exporting", "Exported", "Imported", "BC Update").
 Dieser Zustand wird in der Customer List Extension angezeigt und kann mithilfe der Aktion "State Actions" zum nächsten Zustand geändert werden.
 Beim Wechsel wird eine Nachricht angezeigt.
 
 Dieses Beispiel soll lediglich demonstrieren, wie das State-Pattern implementiert und wie die Business-Logik in die jeweiligen State-Codeunits gekapselt werden kann, anstatt beispielsweise in der Page-Extension zu stehen.
+
+# Weitere Informationen
+Dieses Muster und weitere werden hier sehr gut erklärt und bildlich dargestellt:  
+https://refactoring.guru/design-patterns/state
+
+Hier etwas mehr allgemeines zu den Entwurfsmuster:  
+https://de.wikipedia.org/wiki/Entwurfsmuster
