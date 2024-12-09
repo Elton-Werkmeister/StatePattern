@@ -9,3 +9,11 @@ Designmuster sind bewährte Lösungen für häufig auftretende Probleme in der S
 Das _State Design Pattern_ ist ein **Verhaltensmuster** in der Softwareentwicklung. Es ermöglicht einem Objekt, sein Verhalten zu ändern, wenn sich sein interner Zustand ändert. Dies wird erreicht, indem das Verhalten in separate Zustandsklassen gekapselt wird.
 Das State Design Pattern ähnelt stark dem Strategy Design Pattern, da beide auf Komposition basieren und das Verhalten eines bestimmten Kontexts verändern.
 Der Unterschied besteht darin, dass das State Pattern den nächsten Zustand einleitet und somit von den jeweiligen Zuständen abhängig ist. Im Gegensatz dazu wissen die "Strategien" im Strategy Pattern nichts voneinander und werden von außen gesteuert.
+
+# Beispiel
+
+In diesem einfachen AL-Beispiel wird der Customer Context um eine State Machine erweitert. Die Kunden erhalten ein Zustandsfeld, das einen von vier Zuständen enthalten kann ("Exporting", "Exported", "Imported", "BC Update").
+Dieser Zustand wird in der Customer List Extension angezeigt und kann mithilfe der Aktion "State Actions" zum nächsten Zustand geändert werden.
+Beim Wechsel wird eine Nachricht angezeigt.
+
+Dieses Beispiel soll lediglich demonstrieren, wie das State-Pattern implementiert und wie die Business-Logik in die jeweiligen State-Codeunits gekapselt werden kann, anstatt beispielsweise in der Page-Extension zu stehen.
