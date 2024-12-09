@@ -12,7 +12,9 @@ Der Unterschied besteht darin, dass das State Pattern den nächsten Zustand einl
 
 # Beispiel
 
-In diesem einfachen AL-Beispiel wird der Customer Context um eine [State Machine](https://de.wikipedia.org/wiki/Endlicher_Automat) erweitert. Die Kunden erhalten ein Zustandsfeld, das einen von vier Zuständen enthalten kann ("Exporting", "Exported", "Imported", "BC Update").
+In diesem einfachen AL-Beispiel wird das State-Pattern sowie die Benutzung von Interfaces in AL demonstriert.
+
+Spezifischer wird der Customer Context um eine [State Machine](https://de.wikipedia.org/wiki/Endlicher_Automat) erweitert. Die Kunden erhalten ein Zustandsfeld, das einen von vier Zuständen enthalten kann ("Exporting", "Exported", "Imported", "BC Update").
 Dieser Zustand wird in der Customer List Extension angezeigt und kann mithilfe der Aktion "State Actions" zum nächsten Zustand geändert werden.
 Beim Wechsel wird eine Nachricht angezeigt.
 
@@ -24,3 +26,6 @@ https://refactoring.guru/design-patterns/state
 
 Hier etwas mehr allgemeines zu den Entwurfsmuster:  
 https://de.wikipedia.org/wiki/Entwurfsmuster
+
+Hier etwas zu den AL Interfaces:
+https://learn.microsoft.com/en-us/dynamics365/business-central/dev-itpro/developer/devenv-interfaces-in-al
